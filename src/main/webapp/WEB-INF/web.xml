@@ -1,0 +1,68 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- Configuração do servlet ClienteServlet -->
+    <servlet>
+        <servlet-name>ClienteServlet</servlet-name>
+        <servlet-class>br.com.loja.controllers.ClienteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ClienteServlet</servlet-name>
+        <url-pattern>/clientes</url-pattern>
+    </servlet-mapping>
+
+    <!-- Configuração do servlet VendaServlet -->
+    <servlet>
+        <servlet-name>VendaServlet</servlet-name>
+        <servlet-class>br.com.loja.controllers.VendaServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>VendaServlet</servlet-name>
+        <url-pattern>/vendas</url-pattern>
+    </servlet-mapping>
+
+    <!-- Configuração do servlet PecaServlet -->
+    <servlet>
+        <servlet-name>PecaServlet</servlet-name>
+        <servlet-class>br.com.loja.controllers.PecaServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PecaServlet</servlet-name>
+        <url-pattern>/pecas</url-pattern>
+    </servlet-mapping>
+
+    <!-- Configuração do servlet ServicoServlet -->
+    <servlet>
+        <servlet-name>ServicoServlet</servlet-name>
+        <servlet-class>br.com.loja.controllers.ServicoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServicoServlet</servlet-name>
+        <url-pattern>/servicos</url-pattern>
+    </servlet-mapping>
+
+    <!-- Configuração do servlet VeiculoServlet -->
+    <servlet>
+        <servlet-name>VeiculoServlet</servlet-name>
+        <servlet-class>br.com.loja.controllers.VeiculoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>VeiculoServlet</servlet-name>
+        <url-pattern>/veiculos</url-pattern>
+    </servlet-mapping>
+
+    <!-- Página de erro personalizada para 404 (não encontrado) -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/erro.jsp</location>
+    </error-page>
+
+</web-app>
